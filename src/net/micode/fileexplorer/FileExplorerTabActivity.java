@@ -47,6 +47,10 @@ public class FileExplorerTabActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.fragment_pager);
+        
+        /**
+         * @Knowledge ViewPager, To see Blog: http://blog.csdn.net/buptdavid/article/details/42737275
+         */
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setOffscreenPageLimit(DEFAULT_OFFSCREEN_PAGES);
 
@@ -131,6 +135,7 @@ public class FileExplorerTabActivity extends Activity {
      * view to show as the tab content.  It listens to changes in tabs, and takes
      * care of switch to the correct paged in the ViewPager whenever the selected
      * tab changes.
+     * @Knowledge FragmentPagerAdapter, To see Blog : http://blog.csdn.net/buptdavid/article/details/42737321
      */
     public static class TabsAdapter extends FragmentPagerAdapter
             implements ActionBar.TabListener, ViewPager.OnPageChangeListener {
